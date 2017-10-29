@@ -1,0 +1,13 @@
+spatial_hash_key = "position"
+
+[spatial_hash]
+total = { component = 'value', aggregate = "total" }
+count = { component = 'value', aggregate = "count" }
+neighbour_count = { component = 'value', aggregate = "neighbour_count" }
+set = { component = "value", aggregate = "set" }
+void = { component = "void" }
+
+[components]
+position = { type = "::cgmath::Vector2<u32>", storage = "vector" }
+value = { type = "u32", storage = "vector" }
+void = {}
